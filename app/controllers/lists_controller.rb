@@ -3,6 +3,11 @@ class ListsController < ApplicationController
   def new
     @list = List.new
   end
+  
+  def index
+    @lists = List.all
+  end
+  
 
   def create
     # １.&2. データを受け取り新規登録するためのインスタンス作成
